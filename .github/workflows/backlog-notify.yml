@@ -12,6 +12,7 @@ on:
       - closed
     branches:
       - releases/**
+      - features/**
 
 jobs:
   notify:
