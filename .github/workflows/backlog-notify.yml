@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - develop
+      - develop/**
   pull_request:
     types:
       - opened
@@ -14,7 +14,7 @@ on:
     branches:
       - releases/**
       - features/**
-      - develop
+      - develop/**
 
 jobs:
   notify:
