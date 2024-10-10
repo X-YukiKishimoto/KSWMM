@@ -1,17 +1,12 @@
 name: Backlog Notify
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     types:
       - opened
       - reopened
       - ready_for_review
       - closed
-    branches:
-      - releases/**
 
 jobs:
   notify:
@@ -21,8 +16,8 @@ jobs:
         uses: bicstone/backlog-notify@v5
         with:
           # 必須設定 (The following are required settings)
-          project_key: PROJECT_KEY
-          api_host: example.backlog.jp
+          project_key: KSWMM
+          api_host: exs.backlog.jp
           api_key: ${{ secrets.BACKLOG_API_KEY }}
 
           # 任意設定 (The following are optional settings)
