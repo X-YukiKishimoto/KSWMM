@@ -15,6 +15,7 @@ on:
     branches:
       - releases/**
       - features/**
+      - main
       - develop
       - develop/**
 
