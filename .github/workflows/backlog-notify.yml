@@ -17,7 +17,7 @@ jobs:
         with:
           # 必須設定 (The following are required settings)
           project_key: KSWMM
-          api_host: exs.backlog.jp
+          api_host: https://exs.backlog.com
           api_key: ${{ secrets.BACKLOG_API_KEY }}
 
           # 任意設定 (The following are optional settings)
